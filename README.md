@@ -1,2 +1,2 @@
 # hambarakendus
-Hambarakenduse koos
+Hambarakenduse kood
