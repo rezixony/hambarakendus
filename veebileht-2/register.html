@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/stylelogin.css">
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
+body {font-family: 'Poppins', sans-serif;
+  background-color: #56b4c6}
 
 * {
   box-sizing: border-box;
@@ -15,33 +16,38 @@ body {
 /* Add padding to containers */
 .container {
   padding: 16px;
-  background-color: #68BDCE;
+  background-color: #56b4c6;
 }
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #8ad8ed;
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  box-sizing: border-box;
+  background: #56b4c6;
+  box-shadow: inset 5px 5px 10px #2d8da7,
+            inset -5px -5px 10px #72c4d3;
 }
 
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ffff;
-  outline: none;
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  box-sizing: border-box;
+  background: #56b4c6;
+  box-shadow: inset 5px 5px 10px #2d8da7,
+            inset -5px -5px 10px #72c4d3;
 }
 
 /* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
+
 
 /* Set a style for the submit button */
 .registerbtn {
-  background-color: #2B8BA5;
+  background-color: #56b4c6;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
@@ -52,7 +58,9 @@ hr {
 }
 
 .registerbtn:hover {
-  opacity: 1;
+  background-color: #56b4c6;
+  box-shadow: inset 5px 5px 10px #2d8da7,
+            inset -5px -5px 10px #72c4d3;
 }
 
 /* Add a blue text color to links */
@@ -71,9 +79,9 @@ a {
 
 <form action="/action_page.php">
   <div class="container">
-    <h1>Register</h1>
+    <h2>Register</h2>
     <p>Please fill in this form to create an account.</p>
-    <hr>
+
 
     <label for="FirstName"><b>First Name</b></label>
     <input type="text" placeholder="Enter Your First Name" name="FirstName" id="FirstName" required>
@@ -89,7 +97,7 @@ a {
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <hr>
+
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
     <button type="submit" class="registerbtn">Register</button>
