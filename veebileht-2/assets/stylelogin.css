@@ -1,0 +1,48 @@
+button{
+  border-radius: 80px;
+  border-style: none;
+  box-shadow: 5px 5px 10px #2d8da7,
+              -5px -5px 10px #72c4d3;
+}
+button:hover{
+  box-shadow: inset 5px 5px 10px #2d8da7,
+            inset -5px -5px 10px #72c4d3;
+}
+
+input{
+  border-radius: 80px;
+  border-style: none;
+  box-shadow: 5px 5px 10px #2d8da7,
+              -5px -5px 10px #72c4d3;
+}
+label{
+  color: white;
+}
+
+input[type=text]{
+  color:white;
+}
+
+h2{
+  margin-top: 150px;
+  color:#2B8BA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 400px;
+  margin: 0px auto;
+}
+
+.containerlogin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
